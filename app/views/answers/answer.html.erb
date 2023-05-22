@@ -1,0 +1,11 @@
+<div class="row justify-content-center">
+  <div class="row border-start border-4 border-grey mb-3 py-2">
+    <p><%= params[:question] %></p>
+    <p><em>–You</em></p>
+  </div>
+  <div class="row border-start border-4 border-grey bg-warning mb-2 py-2" style="--bs-bg-opacity: .5;">
+    <p class="p-0"><%= @answer %></p>
+    <p class="p-0"><em>–Your coach</em></p>
+  </div>
+</div>
+<%= link_to "Ask a new question", ask_path, class: "text-decoration-none"%>
